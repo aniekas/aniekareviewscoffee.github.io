@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Banner Section */
+#banner {
+    position: relative;
+    width: 100%;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header Styling */
+header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #6d4c41;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3e2723;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reviews and Top Picks Layout */
+.review, .pick {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.review-header, .pick-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.review h3, .pick h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.review p, .pick p {
+    font-size: 0.9rem; /* Smaller quote text */
+    margin: 10px 0; /* Space above and below text */
+}
+
+.stars {
+    font-size: 1.2rem; /* Size of stars */
+    color: #ffcc00; /* Gold color for stars */
+}
+
+.review img, .pick img {
+    max-width: 100px; /* Smaller image size */
+    max-height: 100px;
+    border-radius: 10px;
+    margin-top: 10px; /* Space between image and text */
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6d4c41;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .review, .pick {
+        flex-direction: column; /* Stack text and image on smaller screens */
+        text-align: center;
+    }
+
+    .review img, .pick img {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+}
